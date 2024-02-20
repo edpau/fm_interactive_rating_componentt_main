@@ -55,7 +55,6 @@ img {
   display: flex;
   flex-flow: column nowrap;
   gap: 25px;
-  /* display: none; */
 }
 
 .ratingState__star {
@@ -108,7 +107,7 @@ img {
   border: none;
   font: inherit;
   color: white;
-  font-weight: 400;
+  font-weight: 700;
   border-radius: 30px;
   letter-spacing: 0.1rem;
   font-size: 0.875rem;
@@ -125,7 +124,6 @@ img {
 }
 
 .thankYouState {
-  display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
@@ -158,4 +156,51 @@ img {
   font-size: 0.9375rem;
   color: var(--lightGrey);
   line-height: 1.5rem;
+}
+
+@media (min-width: 650px) {
+  .card {
+    width: 410px;
+    height: 410px;
+    padding: 30px;
+  }
+
+  .ratingState {
+    gap: 30px;
+  }
+
+  .ratingState__star {
+    height: 50px;
+    width: 50px;
+    padding: 16px;
+  }
+
+  .ratingState__content-heading {
+    font-size: 1.73rem;
+  }
+  .ratingState__rating {
+    margin-bottom: 30px;
+  }
+
+  .ratingState_rating-button {
+    height: 50px;
+    width: 50px;
+    font-size: 1rem;
+  }
+
+  .thankYouState {
+    gap: 35px;
+  }
+
+  .thankYouState__img {
+    height: 110px;
+    width: auto;
+  }
+  .thankYouState__contentHeading {
+    font-size: 1.73rem;
+  }
+
+  .thankYouState__contentText {
+    text-wrap: pretty;
+  }
 }
