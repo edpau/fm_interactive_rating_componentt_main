@@ -1,0 +1,161 @@
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --lightGrey: hsl(217, 12%, 63%);
+  --mediumGrey: hsl(216, 12%, 54%);
+  --darkBlue: hsl(213, 19%, 18%);
+  --veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--veryDarkBlue);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.card {
+  width: 370px;
+  min-height: 350px;
+  border-radius: 28px;
+  background: linear-gradient(
+    180deg,
+    hsl(218, 19%, 16%) 0%,
+    hsl(218, 25%, 13%) 45%
+  );
+  padding: 25px;
+}
+
+.ratingState {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 25px;
+  /* display: none; */
+}
+
+.ratingState__star {
+  height: 45px;
+  width: 45px;
+  background-color: var(--darkBlue);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.ratingState__content-heading {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.6rem;
+}
+
+.ratingState__content-p {
+  color: var(--lightGrey);
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+}
+
+.ratingState__rating {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.ratingState_rating-button {
+  color: var(--lightGrey);
+  background-color: var(--darkBlue);
+  font-family: inherit;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  border: none;
+  cursor: pointer;
+}
+
+.ratingState_rating-button:hover {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+.ratingState__rating-submitBtn {
+  background-color: var(--orange);
+  min-width: 100%;
+  height: 43px;
+  border: none;
+  font: inherit;
+  color: white;
+  font-weight: 400;
+  border-radius: 30px;
+  letter-spacing: 0.1rem;
+  font-size: 0.875rem;
+}
+
+.ratingState__rating-submitBtn:hover {
+  color: var(--orange);
+  background-color: var(--white);
+}
+
+.ratingState__rating-submitBtn:active {
+  background-color: var(--orange);
+  color: white;
+}
+
+.thankYouState {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px 0px;
+  gap: 25px;
+  display: none;
+}
+
+.thankYouState__img {
+  height: 90px;
+  width: auto;
+}
+
+.thankYouState__scorePill {
+  background-color: var(--darkBlue);
+  color: var(--orange);
+  padding: 6px 15px;
+  border-radius: 30px;
+  font-size: 0.9375rem;
+}
+
+.thankYouState__contentHeading {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.thankYouState__contentText {
+  font-size: 0.9375rem;
+  color: var(--lightGrey);
+  line-height: 1.5rem;
+}
